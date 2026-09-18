@@ -15,6 +15,7 @@ import { SolarLoadCalculator } from './components/SolarLoadCalculator';
 import { ProjectSolutionsSection } from './components/ProjectSolutionsSection';
 import { CaseStudiesSection } from './components/CaseStudiesSection';
 import { WhyChooseUs } from './components/WhyChooseUs';
+import { OurInfoSection } from './components/OurInfoSection';
 import { BusinessModelTimeline } from './components/BusinessModelTimeline';
 import { CallToAction } from './components/CallToAction';
 import { FAQSection } from './components/FAQSection';
@@ -143,6 +144,7 @@ export default function App() {
                   />
                   <QuickServicesStrip onSelectServiceCategory={handleSelectServiceCategory} />
                   <WhyChooseUs />
+                  <OurInfoSection onOpenQuoteModal={handleOpenQuoteModal} />
                   <ClientTestimonialsTrust />
                   <CallToAction onOpenQuoteModal={() => handleOpenQuoteModal()} />
                 </div>
@@ -192,6 +194,7 @@ export default function App() {
                   <AboutSection onOpenQuoteModal={() => handleOpenQuoteModal()} />
                   <EngineeringStandardsManual />
                   <WhyChooseUs />
+                  <OurInfoSection onOpenQuoteModal={handleOpenQuoteModal} />
                   <BusinessModelTimeline />
                 </div>
               )}
